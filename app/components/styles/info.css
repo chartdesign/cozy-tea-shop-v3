@@ -1,0 +1,9 @@
+.info-card-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+}
+
+.info-card {
+  line-height: 2rem;
+}

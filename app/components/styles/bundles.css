@@ -1,0 +1,6 @@
+.bundle-text {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: rgba(124, 99, 69, 0.7);
+}
