@@ -8,7 +8,7 @@ const PopularItems = () => {
     <section className='popular'>
       <h1>Popular Teas</h1>
       <div className='popular-card-section'>
-        {popItems.map((item) => (
+        {popItems.slice(0, 4).map((item) => (
           <PopItemCard
             key={item.id}
             image={item.img}

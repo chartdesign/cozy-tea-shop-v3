@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/header.css";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -23,7 +24,8 @@ const Header = () => {
               <img src='/user.svg' alt='user' className='svg-img' /> Account
             </li>
             <li>
-              <img src='/cart.svg' alt='cart' className='svg-img' /> Cart
+              <img src='/cart.svg' alt='cart' className='svg-img' />
+              <Link href='/shop'>Cart</Link>
             </li>
           </ul>
         </div>

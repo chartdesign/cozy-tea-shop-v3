@@ -1,10 +1,13 @@
 import React from "react";
 import "./styles/header.css";
+import Link from "next/link";
 const NavLinks = () => {
   return (
     <nav className='nav-links'>
       <ul className='flex'>
-        <li>SHOP</li>
+        <li>
+          <Link href='/shop'>SHOP</Link>{" "}
+        </li>
         <li>SUBSCRIBE</li>
         <li>LEARN</li>
         <li>OUR STORY</li>

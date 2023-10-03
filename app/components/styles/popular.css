@@ -8,6 +8,7 @@
 
 .popular-card-section {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 1rem;
 }
 
@@ -21,6 +22,9 @@
 }
 
 .popular-card > p {
+  max-width: 220px;
+}
+.popular-card > h3 {
   max-width: 220px;
 }
 

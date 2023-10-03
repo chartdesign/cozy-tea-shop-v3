@@ -23,3 +23,7 @@ export default function Home() {
     </main>
   );
 }
+// TODO - work on functionality of the app
+// make a Modal for app
+// make product page
+// make cart and checkout page

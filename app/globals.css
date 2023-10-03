@@ -30,6 +30,11 @@ video {
   width: 100%;
 }
 
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
 h1 {
   font-size: 3rem;
   margin-top: 0;
