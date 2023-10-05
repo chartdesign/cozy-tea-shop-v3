@@ -12,17 +12,15 @@ import { ShopContextProvider } from "./components/shop-context";
 export default function Home() {
   return (
     <main>
-      <ShopContextProvider>
-        <Header />
-        <NavLinks />
-        <Hero />
-        <Benefits />
-        <Categories />
-        <WhyUs />
-        <PopularItems />
-        <Bundles />
-        <Information />
-      </ShopContextProvider>
+      <Header />
+      <NavLinks />
+      <Hero />
+      <Benefits />
+      <Categories />
+      <WhyUs />
+      <PopularItems />
+      <Bundles />
+      <Information />
     </main>
   );
 }
