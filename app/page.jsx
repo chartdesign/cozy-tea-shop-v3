@@ -7,7 +7,6 @@ import WhyUs from "./components/WhyUs";
 import PopularItems from "./components/PopularItems";
 import Bundles from "./components/Bundles";
 import Information from "./components/Information";
-import { ShopContextProvider } from "./components/shop-context";
 
 export default function Home() {
   return (

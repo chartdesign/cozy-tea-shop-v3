@@ -1,8 +1,12 @@
-import React from "react";
+"use client";
+import React, { useContext } from "react";
+import { ShopContext } from "../components/shop-context";
 import "./styles/header.css";
 import Link from "next/link";
 
-const Header = () => {
+const Header = (props) => {
+  const { addToCart, cartItems } = useContext(ShopContext);
+  const cartItemCount = cartItems[props.itemNum];
   return (
     <header>
       <nav className='nav-header container'>
@@ -29,6 +33,7 @@ const Header = () => {
               <img src='/cart.svg' alt='cart' className='svg-img' />
               <Link href='/cart'>Cart</Link>
             </li>
+            {cartItemCount}
           </ul>
         </div>
       </nav>
