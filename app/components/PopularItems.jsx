@@ -11,6 +11,7 @@ const PopularItems = () => {
         {popItems.slice(0, 4).map((item) => (
           <PopItemCard
             key={item.id}
+            itemNum={item.id}
             image={item.img}
             title={item.title}
             price={item.price}

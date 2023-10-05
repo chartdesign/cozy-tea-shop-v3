@@ -9,7 +9,8 @@
 .popular-card-section {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin: 1rem auto;
+  max-width: 1080px;
 }
 
 .popular-card {

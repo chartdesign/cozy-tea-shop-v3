@@ -7,7 +7,9 @@ const Header = () => {
     <header>
       <nav className='nav-header container'>
         <div className='logo'>
-          <img src='/logo.png' alt='tea shop' />
+          <Link href='/'>
+            <img src='/logo.png' alt='tea shop' />
+          </Link>
         </div>
         <div className='user-info'>
           <div id='input-container' className='searchBox'>
@@ -25,7 +27,7 @@ const Header = () => {
             </li>
             <li>
               <img src='/cart.svg' alt='cart' className='svg-img' />
-              <Link href='/shop'>Cart</Link>
+              <Link href='/cart'>Cart</Link>
             </li>
           </ul>
         </div>

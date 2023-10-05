@@ -7,19 +7,22 @@ import WhyUs from "./components/WhyUs";
 import PopularItems from "./components/PopularItems";
 import Bundles from "./components/Bundles";
 import Information from "./components/Information";
+import { ShopContextProvider } from "./components/shop-context";
 
 export default function Home() {
   return (
     <main>
-      <Header />
-      <NavLinks />
-      <Hero />
-      <Benefits />
-      <Categories />
-      <WhyUs />
-      <PopularItems />
-      <Bundles />
-      <Information />
+      <ShopContextProvider>
+        <Header />
+        <NavLinks />
+        <Hero />
+        <Benefits />
+        <Categories />
+        <WhyUs />
+        <PopularItems />
+        <Bundles />
+        <Information />
+      </ShopContextProvider>
     </main>
   );
 }

@@ -1,6 +1,10 @@
-import React from "react";
+"use client";
+import React, { useContext } from "react";
+import { ShopContext } from "../components/shop-context";
 
 const PopItemCard = (props) => {
+  const { addToCart, cartItems } = useContext(ShopContext);
+  const cartItemCount = cartItems[props.itemNum];
   return (
     <div className='popular-card'>
       <div className='popular-card-img'>
@@ -12,7 +16,9 @@ const PopItemCard = (props) => {
       </p>
       <p>{props.description}</p>
       <p>{props.price}/Oz</p>
-      <button className='all-tea'>ADD TO CART</button>
+      <button className='all-tea' onClick={() => addToCart(props.itemNum)}>
+        ADD TO CART {cartItemCount > 0 && <> ({cartItemCount})</>}
+      </button>
     </div>
   );
 };
