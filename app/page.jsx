@@ -24,6 +24,11 @@ export default function Home() {
   );
 }
 // TODO - work on functionality of the app
+//  add React Icons
+// Add search functionality
+// increase inventory to coincide with categories
 // make a Modal for app
-// make product page
-// make cart and checkout page
+// update product page
+// update  cart page
+// make checkout page
+//  make responsive

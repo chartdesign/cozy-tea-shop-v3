@@ -1,12 +1,14 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { ShopContext } from "../components/shop-context";
 import "./styles/header.css";
 import Link from "next/link";
+import Modal from "./Modal";
 
 const Header = (props) => {
   const { addToCart, cartItems } = useContext(ShopContext);
   const cartItemCount = cartItems[props.itemNum];
+  const [openModal, setOpenModal] = useState(false);
   return (
     <header>
       <nav className='nav-header container'>
@@ -35,6 +37,12 @@ const Header = (props) => {
             </li>
             {cartItemCount}
           </ul>
+          {/* <div>
+            <button onClick={() => setOpenModal(true)} className='modalButton'>
+              Modal
+            </button>
+            <Modal open={openModal} onClose={() => setOpenModal(false)} />
+          </div> */}
         </div>
       </nav>
     </header>
