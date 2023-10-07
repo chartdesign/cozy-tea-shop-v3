@@ -15,7 +15,7 @@ const PopItemCard = (props) => {
         <span>****</span> (110 Reviews)
       </p>
       <p>{props.description}</p>
-      <p>{props.price}/Oz</p>
+      <p>${props.price}/Oz</p>
       <button className='all-tea' onClick={() => addToCart(props.itemNum)}>
         ADD TO CART {cartItemCount > 0 && <> ({cartItemCount})</>}
       </button>

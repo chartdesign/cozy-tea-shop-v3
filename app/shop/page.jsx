@@ -4,6 +4,7 @@ import { popItems } from "./../popularItems.js";
 import PopItemCard from "../components/PopItemCard.jsx";
 import Header from "../components/Header";
 import NavLinks from "../components/NavLinks";
+import Information from "../components/Information";
 
 const page = () => {
   return (
@@ -22,6 +23,7 @@ const page = () => {
           />
         ))}
       </div>
+      <Information />
     </>
   );
 };

@@ -1,9 +1,13 @@
 .popular {
   display: flex;
-  /* flex-direction: column;
-  align-items: center; */
+  flex-direction: column;
+  align-items: center;
   padding: 1rem;
   margin: 1rem 0;
+}
+
+.popular > h1 {
+  color: #68374e;
 }
 
 .popular-card-section {
@@ -17,21 +21,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid lightgray;
+  justify-content: space-between;
+  border: 1px solid rgb(225, 222, 222);
   padding: 1rem;
-  line-height: 2rem;
+  line-height: 1.7rem;
+  max-width: 200px;
 }
 
 .popular-card > p {
   max-width: 220px;
+  line-height: 1.2rem;
+  margin-top: 0.6rem;
 }
 .popular-card > h3 {
+  color: #89747e;
+  font-weight: 600;
+
   max-width: 220px;
+}
+.popular-card > button {
+  margin-top: 12px;
 }
 
 .popular-card-img img {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   object-fit: cover;
 }

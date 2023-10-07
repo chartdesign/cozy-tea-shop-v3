@@ -14,12 +14,14 @@
 }
 
 .all-tea {
+  width: 100%;
   color: white;
   background: #68374e;
   border: 1px solid transparent;
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 0.5rem;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .hero-buttons {
@@ -34,7 +36,7 @@
   background: transparent;
   border: 1px solid #68374e;
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 0.6rem;
 }
 
 .season-tea {
@@ -42,7 +44,7 @@
   background: transparent;
   border: 1px solid #68374e;
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 0.5rem;
   cursor: pointer;
 }
 
@@ -51,5 +53,5 @@
   background: #68374e;
   border: 1px solid transparent;
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 0.6rem;
 }

@@ -7,3 +7,9 @@
 .info-card {
   line-height: 2rem;
 }
+
+.info-card > h3 {
+  color: rgb(182, 168, 147);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
